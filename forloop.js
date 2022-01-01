@@ -9,5 +9,4 @@ for (let index = 0; index < schoolnames.length; index++) {
     const element = schoolnames[index];
     //prints our the result
     console.log(index, element);
-    
 }
