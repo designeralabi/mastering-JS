@@ -29,7 +29,7 @@ var bioData2 = {
     numberOfAge: [15, 18, 120, 35]
 };
 
-// stops the object from accepting new value or modification to exisiting property
+// stops the object from accepting new value 
 Object.freeze(bioData2);
 bioData2.town = "nigeria";
 
