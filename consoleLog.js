@@ -17,6 +17,14 @@ console.log({
 });
 
 // log the document body of the webpage to the console
- console.log(document.body);
+//  console.log(document.body);
 
 console.log('DOM: Document Object Model');
+
+// console output format
+// output hello world with css style to console
+console.log('%cHello World', 'color: white; font-size: 32px; background-color: red');
+
+console.log('%s!', "Hello world");
+
+console.log('%s has %d points', 'sam', 100);
