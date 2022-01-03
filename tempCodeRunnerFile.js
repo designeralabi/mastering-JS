@@ -1,1 +1,1 @@
- console.log(document.body);
+core
