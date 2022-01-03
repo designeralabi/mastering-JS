@@ -23,3 +23,14 @@ var collections = [
 ];
 console.log(collections);
 // objects does not works with ordering unless if associated with arrays
+
+var bioData2 = {
+    numberOfCity: ['lagos', 'Anambra', 'benue', 'asaba'],
+    numberOfAge: [15, 18, 120, 35]
+};
+
+// stops the object from accepting new value or modification to exisiting property
+Object.freeze(bioData2);
+bioData2.town = "nigeria";
+
+console.log(bioData2);
