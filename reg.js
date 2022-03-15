@@ -33,3 +33,12 @@ let codingRegex = /coding/; // Change this line
 let rresult = extractStr.match(codingRegex);
 // Change this line
 console.log(rresult);
+
+
+//wildcards with RegEx
+let humStr = "I'll hum a song ";
+let hugStr = "Bear hug";
+let hugRex = /hu./;
+
+humStr.match(hugRex);
+hugStr.match(hugRex); 
