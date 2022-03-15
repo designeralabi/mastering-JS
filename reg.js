@@ -40,5 +40,16 @@ let humStr = "I'll hum a song ";
 let hugStr = "Bear hug";
 let hugRex = /hu./;
 
-humStr.match(hugRex);
-hugStr.match(hugRex); 
+console.log(humStr.match(hugRex));
+console.log(hugStr.match(hugRex));
+
+
+//finding more with RegEx
+let testStr = "Repeat, Repeat, Repeat";
+let ourNewRegex = /Repeat/g;
+
+let regResult = testStr.match(ourNewRegex);
+console.log(regResult);
+
+
+
