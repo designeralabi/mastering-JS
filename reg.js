@@ -19,7 +19,6 @@ let fccRegex = /FreeCODECamp/i;
 let result = fccRegex.test(myString);
 console.log(result);
 
-
 // pratice with the Match method;
 "Hello, World!".match(/Hello/);
 let ourStr = "Regular expressions";
@@ -34,7 +33,6 @@ let rresult = extractStr.match(codingRegex);
 // Change this line
 console.log(rresult);
 
-
 //wildcards with RegEx
 let humStr = "I'll hum a song ";
 let hugStr = "Bear hug";
@@ -43,14 +41,12 @@ let hugRex = /hu./;
 console.log(humStr.match(hugRex));
 console.log(hugStr.match(hugRex));
 
-
 //finding more with RegEx
 let testStr = "Repeat, Repeat, Repeat";
 let ourNewRegex = /Repeat/g;
 
 let regResult = testStr.match(ourNewRegex);
 console.log(regResult);
-
 
 let greetingName = /n[am]e/;
 let welcome = "Hello world, my name is this and dat";
@@ -61,15 +57,18 @@ console.log(greetChecker);
 
 //matching character with multiple Possibilities
 let quoteSample =
-    "Beware of bugs in the above code; I have only proved it correct, not tried it.";
-  
+  "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+
 let vowelRegex = /[a,e,i,o,u]/gi;
 let quoteResult = quoteSample.match(vowelRegex);
 
 console.log(quoteResult);
 
+//matching character with multiple Possibilities
+let quoteSample1 = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 
+// if | g- flag| is not included it only matches the first it vowel;
+let vowelRegex1 = /[a,e,i,o,u]/i;
+let quoteResult2 = quoteSample1.match(vowelRegex1);
 
-
-
-
+console.log(quoteResult2);
