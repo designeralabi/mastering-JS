@@ -52,4 +52,24 @@ let regResult = testStr.match(ourNewRegex);
 console.log(regResult);
 
 
+let greetingName = /n[am]e/;
+let welcome = "Hello world, my name is this and dat";
+
+let greetChecker = welcome.match(greetingName);
+
+console.log(greetChecker);
+
+//matching character with multiple Possibilities
+let quoteSample =
+    "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+  
+let vowelRegex = /[a,e,i,o,u]/gi;
+let quoteResult = quoteSample.match(vowelRegex);
+
+console.log(quoteResult);
+
+
+
+
+
 
