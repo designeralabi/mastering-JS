@@ -72,3 +72,10 @@ let vowelRegex1 = /[a,e,i,o,u]/i;
 let quoteResult2 = quoteSample1.match(vowelRegex1);
 
 console.log(quoteResult2);
+
+//matching letter of the Alphabet with start & end range using RegEx
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+
+let bgRegex = /[a-e]at/;
