@@ -65,7 +65,8 @@ let quoteResult = quoteSample.match(vowelRegex);
 console.log(quoteResult);
 
 //matching character with multiple Possibilities
-let quoteSample1 = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let quoteSample1 =
+  "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 
 // if | g- flag| is not included it only matches the first it vowel;
 let vowelRegex1 = /[a,e,i,o,u]/i;
@@ -79,3 +80,20 @@ let batStr = "bat";
 let matStr = "mat";
 
 let bgRegex = /[a-e]at/;
+console.log(catStr.match(bgRegex));
+console.log(batStr.match(bgRegex));
+console.log(matStr.match(bgRegex));
+
+//Matching numbers * letters using RegEx
+let numStr = "Jenny8675309";
+let myRegex = /[a-z0-9]/gi;
+// matches all letters and numbers in numbers
+console.log(numStr.match(myRegex));
+
+
+//matching single characters not specified
+let quote1Sample = "3 blind mice";
+let quote1Regex = /[^aeiou0-9]/gi;
+let quote1Result = quote1Sample.match(quote1Regex);
+
+console.log(quote1Result);
